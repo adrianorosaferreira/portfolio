@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300');
+
+header, footer, .container { max-width: 90em; margin: 0 auto; }
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #747704;
+    font-weight: 300;
+    line-height: 1.61;
+}
+
+hr {
+    font-weight: 100px;
+}
+
+.text-muted { 
+    color: #bcbbbb;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.tile-logo {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 576px) {
+	.title-super{
+	    font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+	.title-super{
+	    font-size: 35px;
+	}
+	.img-responsive{
+		display: -webkit-inline-box;
+	}
+}
