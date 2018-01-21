@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
 <html lang="eng">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale-1">
-  <title>Adriano Ferreira´s Portfolio</title>
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <title>Adriano Ferreira´s Portfolio</title>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body>
     <div class="container">
       <header class="row justify-content-start">
         <div class="col-xs-4">
-          <img src="https://picsum.photos/100/100?image=0" class="tile-logo img-responsive fa fa-user-circle" alt="font-awesome" aria-hidden="true">
+          <img src="https://picsum.photos/100/100?image=0" class="title-logo img-responsive fa fa-user-circle" alt="font-awesome" aria-hidden="true">
         </div>
         <div class="col-xs-8 text-right text-uppercase">
           <h1 class="title-super text-thin">Adriano Ferreira</h1>
@@ -25,7 +27,60 @@
       <hr>
       <article class="row">
         <div class="col-xs-12 col-sm-12">
-          <img src="https://picsum.photos/1140/350/?image=1033" class="img-responsive" alt="My Logo">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/pexels-MarcMueller-380769-min.jpeg" alt="Marc Mueller by pexels" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Javascrip</h3>
+                    <p>Vanilla JS, Angular JS and KnockoutJS</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/pexels-MarkusSpiske-130111-min.jpeg" alt="Markus Spiske by pexels" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>CSS</h3>
+                    <p>SASS, LESS and Bootstrap</p>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <img src="images/pexels-Pexels-212286-min.jpeg" alt="Pexels.com" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Programming Languages</h3>
+                    <p>Java, PHP and Caché ObjectScript</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <img src="images/pexels-Pexels-310983-min.jpeg" alt="Pexels.com" style="width:100%;">
+                  <div class="carousel-caption">
+                    <h3>Specialties</h3>
+                    <p>Project management(PMBOK), Quality Assurance and Scrum</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
         </div>
       </article>
       <section class="row text-center">
@@ -57,78 +112,99 @@
           <p>Link to <a href="https://github.com/adrianorosaferreira/frontend-nanodegree-map">Project</a> and <a href="https://adrianorosaferreira.github.io/frontend-nanodegree-map/">GitPages</a></p>
         </article>
       </section>  
-    </section>
       <!-- Modal -->
-    <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <main class="modal-dialog">
-            <section class="modal-content">
-                <header class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Resume</h4>
-                </header>
-                <article class="modal-body">
-                    <img class="img-responsive" src="https://picsum.photos/555/300?image=1079">
-                    </br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
-                </article>
-                <footer class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                </footer>
-            </section>
+          <section class="modal-content">
+            <header class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Resume</h4>
+            </header>
+            <article class="modal-body">
+              <img class="img-responsive" src="https://picsum.photos/555/300?image=1079">
+              </br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
+            </article>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </footer>
+          </section>
         </main>
+      </div>
+
+      <div class="modal fade" id="arcade_game" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <main class="modal-dialog">
+          <section class="modal-content">
+            <header class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Arcade Game</h4>
+            </header>
+            <article class="modal-body">
+              <img class="img-responsive" src="https://picsum.photos/555/300?image=1071">
+              </br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
+            </article>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </footer>
+          </section>
+        </main>
+      </div> 
+
+      <div class="modal fade" id="websites_optimization" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <main class="modal-dialog">
+          <section class="modal-content">
+            <header class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Websites Optimization</h4>
+            </header>
+            <article class="modal-body">
+              <img class="img-responsive" src="https://picsum.photos/555/300?image=1040">
+              <br/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
+            </article>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </footer>
+          </section>
+        </main>
+      </div> 
+
+      <div class="modal fade" id="neighborhood_map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <main class="modal-dialog">
+          <section class="modal-content">
+            <header class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+            </header>
+            <article class="modal-body">
+              <img class="img-responsive" src="https://picsum.photos/555/300?image=1059">
+              </br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
+            </article>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </footer>
+          </section>
+        </main>
+      </div>
+      <hr>
+      <footer class="wrapper">
+        <ul class="list-inline">
+          <li>
+            <span>mobile: +55 (48) 98827-7554</span>
+          </li> 
+          <li>
+            <span>e-mail: adrianorosaferreira@gmail.com</span>
+          </li> 
+          <li>
+            <span>github: adrianorosaferreira</span>
+          </li> 
+          <li>
+            <span>linkedin: adrianorosaferreira</span>
+          </li> 
+        </ul>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://use.fontawesome.com/0d4cde2a2b.js"></script> 
     </div>  
-    <div class="modal fade" id="arcade_game" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <main class="modal-dialog">
-            <section class="modal-content">
-                <header class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Arcade Game</h4>
-                </header>
-                <article class="modal-body">
-                    <img class="img-responsive" src="https://picsum.photos/555/300?image=1071">
-                    </br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
-                </article>
-                <footer class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                </footer>
-            </section>
-        </main>
-    </div> 
-    <div class="modal fade" id="websites_optimization" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <main class="modal-dialog">
-            <section class="modal-content">
-                <header class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Websites Optimization</h4>
-                </header>
-                <article class="modal-body">
-                    <img class="img-responsive" src="https://picsum.photos/555/300?image=1040">
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
-                </article>
-                <footer class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                </footer>
-            </section>
-        </main>
-    </div> 
-    <div class="modal fade" id="neighborhood_map" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <main class="modal-dialog">
-            <section class="modal-content">
-                <header class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
-                </header>
-                <article class="modal-body">
-                    <img class="img-responsive" src="https://picsum.photos/555/300?image=1059">
-                    </br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur ut erat nec ultrices. Maecenas quis dui metus. Vestibulum tristique lacus et est commodo aliquam.</p>
-                </article>
-                <footer class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                </footer>
-            </section>
-        </main>
-    </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/0d4cde2a2b.js"></script>
   </body>
 </html>
