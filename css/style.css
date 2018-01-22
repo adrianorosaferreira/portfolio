@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300');
 
-header, footer, .container { max-width: 90em; margin: 0 auto; }
+header, footer, .container { 
+    max-width: 90em; 
+    margin: 0 auto; 
+}
 
 body {
     font-family: "Lato", sans-serif;
@@ -8,10 +11,6 @@ body {
     font-weight: 300;
     line-height: 1.61;
     box-sizing: border-box;
-}
-
-hr {
-    font-weight: 100px;
 }
 
 .text-muted { 
@@ -40,25 +39,36 @@ hr {
     margin-bottom: 20px;
 }
 
+.modal-body .img-responsive {
+    margin: 0 auto;
+}
+
+.project_description {
+    text-align: justify;
+    font-size: 16px;
+}
+
 footer ul li{
     padding: 0 10px;
     float: left;
 }
 
 @media only screen and (max-width: 576px) {
-	.title-super{
-	    font-size: 30px;
-	}
+    .title-super{
+        font-size: 30px;
+    }
     .carousel-inner img {
         min-height: 190px;
     }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-	.title-super{
-	    font-size: 35px;
-	}
-	.img-responsive{
-		display: -webkit-inline-box;
-	}
+    .title-super{
+        font-size: 35px;
+    }
+    .img-responsive{
+        display: -webkit-inline-box;
+    }
+    
 }
+
